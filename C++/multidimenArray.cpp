@@ -1,3 +1,5 @@
+ //***************************** 2D Array Representation*****************************************
+
 #include<iostream>
 using namespace std;
 
@@ -34,3 +36,52 @@ int main()
   }
 return 0;
 }
+
+//***************************** 3D Array Representation*****************************************
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  int set,r,c;
+  int arr[10][10][10];
+  cout << "\nEnter set the rows and columns : " << endl;
+  cin >> set;
+  
+  cout << "\nEnter total rows : " << endl;
+  cin >> r;
+
+  cout << "\nEnter total columns : " << endl;
+  cin >> c;
+
+ //three nested loops for user defined input
+  for(int i=0;i<set;i++)
+  {
+    for(int j=0;j<r;j++)
+    {
+       for(int k=0;k<c;k++)
+       {
+          cout << "\nEnter element :" <<endl;
+          cin >> arr[i][j][k];
+        }
+
+     }
+   }
+  //Displayed the output with proper labelling
+  for(int i=0;i<set;i++)
+  {
+    for(int j=0;j<r;j++)
+    {
+       for(int k=0;k<c;k++)
+       {
+          cout << "\narr[" << i << "]" << "[" << j << "]" << "[" << k << "] :";
+  cout << arr[i][j][k] << endl;;
+                    
+        }
+
+     }
+   }
+  
+ return 0;
+}
+
